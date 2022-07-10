@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="description" content="My resume website"/>
+	<meta name="author" content="Dung"/>
+	<meta name="country" content="Vietnam"/>
+	<title>Dung Resume</title>
+	<style>
+#menu_text {
+	margin: 0;
+}	
+
+#menu_text {
+	background-color:  #1abc9c;
+	text-align: center;
+	padding: 80px;
+}
+
+nav {
+	background-color: #333;
+	overflow: hidden;
+}
+
+nav a {
+	color: white;
+	padding: 14px 20px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
+.menu_left {
+	float: left;
+}
+
+.menu_right {
+	float: right;
+}
+
+nav a:hover {
+	background-color: #DDD;
+	color: black;
+}
+
+#left_side {
+	flex: 30%;
+	background-color: #f1f1f1;
+	padding: 10px 20px;
+}
+
+#right_side {
+	flex: 70%;
+	padding: 10px 20px;
+}
+
+#flex_container {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+footer {
+	background-color: #333;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+footer > a {
+	color: white;
+}
+
+table {
+	border-style: solid;
+}
+
+/* Styling the table */
+table {
+	border-collapse: collapse;
+}
+
+table td, table th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+@media(max-width: 800px) {
+	#left_side {
+		flex: 100%;
+	}
+
+	#right_side {
+		flex: 100%;
+	}
+
+	#flex_container {
+		flex-wrap: wrap;
+	}
+}
+
+@media(max-width: 400px) {
+	#left_side {
+		flex: 100%;
+	}
+
+	#right_side {
+		flex: 100%;
+	}
+
+	#flex_container {
+		flex-wrap: wrap;
+	}
+}
+	</style>
+</head>
+<body>
+	<h1 id="menu_text">My Resume</h1>
+
+	<nav>
+		<a href="#contact" class="menu_left">About</a>
+		<a href="#education" class="menu_left">Education</a>
+		<a href="#score" class="menu_left">Score</a>
+		<a href="#social" class="menu_right">Social media</a>
+	</nav>
+
+	<div id="flex_container">
+		<div id="left_side">
+			<h2 id="contact">About me</h2>
+			<img src="assets/photo.jpg" alt="My photo" width="100" height="100"/>
+			<p><em>I am working in the information technology field.</em></p>
+			<ul>
+				<li><strong>Fullname</strong>: Dung</li>
+				<li><strong>Country</strong>: Vietnam</li>
+			</ul>
+			<h2 id="education">Education</h2>
+			<ol>
+				<li>Hanoi-Amsterdam Highschool</li>
+				<li>Swinburne University</li>
+				<li>Deakin University</li>
+			</ol>
+
+		</div>
+
+		<div id="right_side">
+			<h2 id="score">Scores</h2>
+
+			<table>
+				<tr>
+					<th rowspan="2"></th>
+					<th colspan="2">Math</th>
+					<th rowspan="2">Physics</th>
+					<th rowspan="2">IT</th>
+				</tr>
+				<tr>
+					<th>Math 1</th>
+					<th>Math 2</th>
+				</tr>
+				<tr>
+					<th>2019</th>
+					<td>8</td>
+					<td>0</td>
+					<td>9</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<th>2020</th>
+					<td>10</td>
+					<td>0</td>
+					<td>2</td>
+					<td>9</td>
+				</tr>
+				<tr>
+					<th>2021</th>
+					<td>8</td>
+					<td>0</td>
+					<td>8</td>
+					<td>8</td>
+				</tr>
+			</table>
+			<h2 id="social">Social Media</h2>
+			<p>Youtube: <a href="https://www.youtube.com/channel/UCo-K8JfQn8NLMU2g_aL7hEA">Dung</a></p>
+			<p>Facebook: <a href="https://www.facebook.com/profile.php?id=100080916157042">Dung</a></p>
+
+		</div>
+	</div>
+
+	<footer>
+		Created by Dung Lai - <a href="mailto:thorgaming2605@gmail.com">Email me</a>
+	</footer>
+</body>mailto:thorgaming2605@gmail.com
+</html>
